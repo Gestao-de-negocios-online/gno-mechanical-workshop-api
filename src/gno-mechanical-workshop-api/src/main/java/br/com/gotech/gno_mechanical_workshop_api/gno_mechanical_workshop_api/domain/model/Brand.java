@@ -1,4 +1,4 @@
-package br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.model;
+package br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.domain.model;
 
 import lombok.Builder;
 import lombok.Data;

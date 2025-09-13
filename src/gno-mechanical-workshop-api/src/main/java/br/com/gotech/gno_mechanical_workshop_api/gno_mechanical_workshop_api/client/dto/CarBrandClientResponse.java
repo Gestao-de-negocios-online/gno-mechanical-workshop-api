@@ -2,7 +2,7 @@ package br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.cl
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.model.Brand;
+import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.domain.model.Brand;
 import lombok.Data;
 
 @Data

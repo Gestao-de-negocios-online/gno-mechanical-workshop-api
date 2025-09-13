@@ -1,4 +1,4 @@
-package br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.service.impl;
+package br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.domain.service.impl;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -6,9 +6,9 @@ import java.util.concurrent.CompletableFuture;
 import org.springframework.stereotype.Service;
 
 import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.client.service.CarBrandClientService;
+import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.domain.model.Brand;
+import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.domain.service.BrandService;
 import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.enuns.VehicleType;
-import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.model.Brand;
-import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.service.BrandService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 

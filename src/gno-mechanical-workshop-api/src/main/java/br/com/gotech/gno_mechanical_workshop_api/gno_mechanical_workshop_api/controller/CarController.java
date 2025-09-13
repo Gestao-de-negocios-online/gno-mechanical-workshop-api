@@ -6,9 +6,9 @@ import java.util.concurrent.CompletableFuture;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.domain.model.Brand;
+import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.domain.service.BrandService;
 import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.enuns.VehicleType;
-import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.model.Brand;
-import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.service.BrandService;
 import lombok.RequiredArgsConstructor;
 
 @RestController

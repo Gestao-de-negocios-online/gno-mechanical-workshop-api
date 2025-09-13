@@ -3,8 +3,8 @@ package br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.cl
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
+import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.domain.model.Brand;
 import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.enuns.VehicleType;
-import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.model.Brand;
 
 public interface CarBrandClientService {
 
