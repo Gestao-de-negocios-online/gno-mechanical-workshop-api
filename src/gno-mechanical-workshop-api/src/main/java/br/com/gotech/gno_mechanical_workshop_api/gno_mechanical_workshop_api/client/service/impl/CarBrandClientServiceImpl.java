@@ -10,8 +10,8 @@ import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.cli
 import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.client.dto.CarBrandClientRequest;
 import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.client.dto.CarBrandClientResponse;
 import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.client.service.CarBrandClientService;
-import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.domain.model.Brand;
-import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.enuns.VehicleType;
+import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.domain.model.CarBrand;
+import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.domain.enuns.VehicleType;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
@@ -23,7 +23,7 @@ public class CarBrandClientServiceImpl implements CarBrandClientService {
     private final FipeClient fipeClient;
 
     @Override
-    public CompletableFuture<List<Brand>> getBrands(VehicleType vehicleType) {
+    public CompletableFuture<List<CarBrand>> getBrands(VehicleType vehicleType) {
 
         var brandClientResponse = fipeClient.getCarBrands(new CarBrandClientRequest(vehicleType));
 

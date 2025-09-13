@@ -1,12 +1,11 @@
 package br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.client.dto;
 
+import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.domain.model.CarModel;
 import com.fasterxml.jackson.annotation.JsonProperty;
-
-import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.domain.model.CarBrand;
 import lombok.Data;
 
 @Data
-public class CarBrandClientResponse {
+public class Result {
 
     @JsonProperty("Label")
     private String label;
@@ -14,11 +13,11 @@ public class CarBrandClientResponse {
     @JsonProperty("Value")
     private String value;
 
-    public CarBrand toModel() {
+    public CarModel toDomainModel(){
 
-        return CarBrand.builder()
-                .id(Integer.parseInt(value))
-                .name(label)
+        return CarModel.builder()
+                .id(Integer.valueOf(value))
+                .model(label)
                 .build();
     }
 }

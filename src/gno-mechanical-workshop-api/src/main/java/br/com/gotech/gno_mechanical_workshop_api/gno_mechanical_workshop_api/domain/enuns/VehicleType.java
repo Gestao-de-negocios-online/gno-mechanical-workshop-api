@@ -1,4 +1,4 @@
-package br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.enuns;
+package br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.domain.enuns;
 
 public enum VehicleType {
     CAR(1, "Carro"),

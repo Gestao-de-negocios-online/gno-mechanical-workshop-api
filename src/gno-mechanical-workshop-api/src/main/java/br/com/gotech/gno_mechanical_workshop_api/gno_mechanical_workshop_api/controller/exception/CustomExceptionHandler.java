@@ -30,7 +30,10 @@ public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
     }
 
     @ExceptionHandler({Exception.class})
-    ResponseEntity<ErrorResponse> handleTechinicalException(Exception businessException){
+    ResponseEntity<ErrorResponse> handleTechinicalException(Exception exception){
+
+        log.error("ERRO DE TÉCNICO AO PROCESSAR SOLICITAÇÃO :: {}", String.join(" \n\n ",
+                exception.getMessage()));
 
         ErrorResponse errorResponse = ErrorResponse.builder()
                 .messages(List.of("Erro técnico inesperado"))

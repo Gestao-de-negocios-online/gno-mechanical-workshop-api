@@ -3,10 +3,10 @@ package br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.do
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.domain.model.Brand;
-import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.enuns.VehicleType;
+import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.domain.model.CarBrand;
+import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.domain.enuns.VehicleType;
 
 public interface BrandService {
 
-    CompletableFuture<List<Brand>> getBrands(VehicleType vehicleType);
+    CompletableFuture<List<CarBrand>> getBrands(VehicleType vehicleType);
 }

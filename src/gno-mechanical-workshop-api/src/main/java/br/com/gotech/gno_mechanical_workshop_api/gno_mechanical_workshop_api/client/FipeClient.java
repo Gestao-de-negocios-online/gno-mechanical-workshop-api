@@ -2,6 +2,8 @@ package br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.cl
 
 import java.util.List;
 
+import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.client.dto.CarModelClientRequest;
+import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.client.dto.CarModelClientResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -17,4 +19,7 @@ public interface FipeClient {
 
     @PostMapping(value = "/ConsultarMarcas", produces = "application/json")
     ResponseEntity<List<CarBrandClientResponse>> getCarBrands(@RequestBody CarBrandClientRequest request);
+
+    @PostMapping(value = "/ConsultarModelos", produces = "application/json")
+    ResponseEntity<CarModelClientResponse> getCarModels(@RequestBody CarModelClientRequest request);
 }
