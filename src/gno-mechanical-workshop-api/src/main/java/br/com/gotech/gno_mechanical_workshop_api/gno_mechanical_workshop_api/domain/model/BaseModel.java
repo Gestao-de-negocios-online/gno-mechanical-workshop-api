@@ -19,6 +19,7 @@ public abstract class BaseModel {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
+
     public abstract void validate();
 
     protected void validateProperties() {
@@ -33,8 +34,6 @@ public abstract class BaseModel {
                     .stream()
                     .map(ConstraintViolation::getMessageTemplate)
                     .toList();
-
-
 
             throw new BusinessException("Informações fornecidas inválidas", messages);
         }

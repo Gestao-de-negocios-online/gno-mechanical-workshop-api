@@ -7,10 +7,12 @@ import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.dom
 import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.domain.model.Client;
 import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.infrastructure.persistence.entity.AddressEntity;
 import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.infrastructure.persistence.entity.ClientEntity;
+import org.mapstruct.Mapping;
 
 @Mapper(componentModel = "spring")
 public interface RepositoryMapper {
 
+    @Mapping(source = "address", target = "address")
     ClientEntity toClientEntity(Client client);
 
     Client toClientDomain(ClientEntity entity);

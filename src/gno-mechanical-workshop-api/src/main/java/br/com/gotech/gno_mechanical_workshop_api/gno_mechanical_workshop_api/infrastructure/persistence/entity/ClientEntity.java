@@ -1,18 +1,17 @@
 package br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.infrastructure.persistence.entity;
 
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.Set;
+
 @Data
 @Entity
-@EqualsAndHashCode(callSuper = true)
 @Table(name = "clients")
+@EqualsAndHashCode(callSuper = true)
 public class ClientEntity extends BaseEntity {
 
     @Column(name = "active", nullable = false)
@@ -30,7 +29,14 @@ public class ClientEntity extends BaseEntity {
     @Column(name = "secondary_phone", length = 11)
     private String secondaryPhone;
 
+    @Column(name = "deletedAt")
+    private LocalDateTime deletedAt;
+
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "address_id", referencedColumnName = "id")
     private AddressEntity address;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "client_id", referencedColumnName = "id")
+    private Set<CarEntity> cars;
 }

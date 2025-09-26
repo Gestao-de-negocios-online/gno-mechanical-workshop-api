@@ -2,23 +2,16 @@ package br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.in
 
 import java.time.LocalDateTime;
 
+import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.core.annotation.Order;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Inheritance;
-import jakarta.persistence.InheritanceType;
 import lombok.Data;
 
 @Data
-@Entity
-@Inheritance(strategy = InheritanceType.JOINED)
-public class BaseEntity {
+@MappedSuperclass
+public abstract class BaseEntity {
 
     @Id
     @Order(0)

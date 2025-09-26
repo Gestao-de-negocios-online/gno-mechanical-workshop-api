@@ -7,6 +7,8 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.RequiredArgsConstructor;
 
+import java.util.List;
+
 @Data
 @RequiredArgsConstructor
 @EqualsAndHashCode(callSuper = true)
@@ -30,9 +32,15 @@ public class Client extends BaseModel {
     @NotNull(message = "O endereço é obrigatório")
     private Address address;
 
-    public void validate() {
-        validateProperties();
+    private List<Car> cars;
 
+    public void validate() {
+
+        validateProperties();
         address.validateProperties();
+
+        if(cars != null && !cars.isEmpty()){
+            cars.forEach(car -> validateProperties());
+        }
     }
 }

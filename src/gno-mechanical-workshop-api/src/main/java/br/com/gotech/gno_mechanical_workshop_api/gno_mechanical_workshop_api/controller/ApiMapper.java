@@ -1,5 +1,8 @@
 package br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.controller;
 
+import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.dto.request.CreateAddressRequest;
+import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.dto.request.UpdateAddressRequest;
+import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.dto.request.UpdateClientRequest;
 import org.mapstruct.Mapper;
 
 import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.domain.model.Address;
@@ -12,10 +15,12 @@ import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.dto
 public interface ApiMapper {
 
     Client toClientModel(CreateClientRequest clientRequest);
+    Client toClientModel(UpdateClientRequest clientRequest);
 
     ClientResponse toClientResponse(Client client);
 
-    Address toAddressModel(AddressResponse addressResponse);
+    Address toAddressModel(CreateAddressRequest addressResponse);
+    Address toAddressModel(UpdateAddressRequest addressResponse);
 
     AddressResponse toAddressResponse(Address address);
 }

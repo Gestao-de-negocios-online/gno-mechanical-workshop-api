@@ -1,6 +1,7 @@
 package br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.dto.response;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
@@ -17,4 +18,5 @@ public class ClientResponse {
     private String phone;
     private String secondaryPhone;
     private AddressResponse address;
+    private List<CarResponse> cars;
 }

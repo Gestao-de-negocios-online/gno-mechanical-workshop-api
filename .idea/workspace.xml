@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1e34848-9b4c-4d13-832d-a788f6c5bcaa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/client/dto/CarBrandClientResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/client/dto/CarBrandClientResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/client/service/CarBrandClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/client/service/CarBrandClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/client/service/impl/CarBrandClientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/client/service/impl/CarBrandClientServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/controller/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/model/Brand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/service/BrandService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/service/impl/BrandServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/dto/request/CrateCarRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/dto/response/CarResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/domain/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/domain/model/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/domain/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/domain/model/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/infrastructure/persistence/entity/AddressEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/infrastructure/persistence/entity/AddressEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/infrastructure/persistence/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/infrastructure/persistence/entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/infrastructure/persistence/entity/CarEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/infrastructure/persistence/entity/CarEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/infrastructure/persistence/entity/ClientEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/infrastructure/persistence/entity/ClientEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/infrastructure/persistence/jpa/ClientJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/infrastructure/persistence/jpa/ClientJpaRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +20,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="32eiV8RMDQLZtyQ3P03pEunjIgQ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -34,10 +34,20 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/bravo3465/Repositories/gno-mechanical-workshop-api/src/gno-mechanical-workshop-api"
+    "last_opened_file_path": "/home/bravo3465/Repositories/gno-frontend-web/gno-frontend-web",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-WS-252.25557.126" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c1e34848-9b4c-4d13-832d-a788f6c5bcaa" name="Changes" comment="" />
@@ -45,7 +55,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1757787463731</updated>
+      <workItem from="1758066050184" duration="84000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

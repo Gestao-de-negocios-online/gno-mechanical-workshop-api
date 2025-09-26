@@ -1,16 +1,14 @@
 package br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.infrastructure.persistence.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 @Data
 @Entity
-@EqualsAndHashCode(callSuper = true)
 @Table(name = "addresses")
+@EqualsAndHashCode(callSuper = true)
 public class AddressEntity extends BaseEntity {
 
     @Column(name = "street", nullable = false, length = 100)
