@@ -3,6 +3,7 @@ package br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.in
 import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.domain.model.Client;
 
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 
 public interface ClientRepository {
 

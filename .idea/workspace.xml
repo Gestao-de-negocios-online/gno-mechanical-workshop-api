@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1e34848-9b4c-4d13-832d-a788f6c5bcaa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/dto/request/CrateCarRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/dto/response/CarResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/domain/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/domain/model/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/domain/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/domain/model/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/infrastructure/persistence/entity/AddressEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/infrastructure/persistence/entity/AddressEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/infrastructure/persistence/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/infrastructure/persistence/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/infrastructure/persistence/entity/CarEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/infrastructure/persistence/entity/CarEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/infrastructure/persistence/entity/ClientEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/infrastructure/persistence/entity/ClientEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/infrastructure/persistence/jpa/ClientJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gno-mechanical-workshop-api/src/main/java/br/com/gotech/gno_mechanical_workshop_api/gno_mechanical_workshop_api/infrastructure/persistence/jpa/ClientJpaRepository.java" afterDir="false" />
-    </list>
+    <list default="true" id="c1e34848-9b4c-4d13-832d-a788f6c5bcaa" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,18 +26,11 @@
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/bravo3465/Repositories/gno-frontend-web/gno-frontend-web",
+    "last_opened_file_path": "/Users/bravo3465/Repositories/gno-mechanical-workshop-api",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-WS-252.25557.126" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c1e34848-9b4c-4d13-832d-a788f6c5bcaa" name="Changes" comment="" />

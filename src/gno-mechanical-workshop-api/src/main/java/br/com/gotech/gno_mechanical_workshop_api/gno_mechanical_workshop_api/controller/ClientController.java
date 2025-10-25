@@ -13,6 +13,7 @@ import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.dto
 import lombok.RequiredArgsConstructor;
 
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 
 @RestController
 @RequiredArgsConstructor
@@ -43,14 +44,18 @@ public class ClientController {
 
     @GetMapping("/client")
     @Operation(summary = "Obtém todos os clientes ativos")
-    public ResponseEntity<List<ClientResponse>> getAll(){
+    public CompletableFuture<ResponseEntity<List<ClientResponse>>> getAll(){
 
-        var clients = clientService.getAll();
-        var clientResponseList = clients.stream()
-                .map(apiMapper::toClientResponse)
-                .toList();
+        return CompletableFuture.supplyAsync(() -> {
 
-        return ResponseEntity.ok(clientResponseList);
+            var clients = clientService.getAll();
+
+            var clientResponseList = clients.stream()
+                    .map(apiMapper::toClientResponse)
+                    .toList();
+
+            return ResponseEntity.ok(clientResponseList);
+        });
     }
 
     @GetMapping("/client/{id}")

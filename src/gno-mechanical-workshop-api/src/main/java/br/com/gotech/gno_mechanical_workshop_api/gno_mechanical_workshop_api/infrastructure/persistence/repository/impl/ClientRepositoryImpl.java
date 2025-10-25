@@ -11,6 +11,7 @@ import br.com.gotech.gno_mechanical_workshop_api.gno_mechanical_workshop_api.inf
 import lombok.RequiredArgsConstructor;
 
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 
 @Repository
 @RequiredArgsConstructor
